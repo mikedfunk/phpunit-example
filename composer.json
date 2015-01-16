@@ -1,0 +1,10 @@
+{
+    "require-dev": {
+        "phpunit/phpunit": "~4.4"
+    },
+    "autoload": {
+      "psr-4": {
+        "MikeFunk\\": "src/MikeFunk/"
+      }
+    }
+}
