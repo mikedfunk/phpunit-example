@@ -2,7 +2,10 @@
 * [get composer](http://getcomposer.org)
 * `composer install`
 * `vendor/bin/phpunit --bootstrap vendor/autoload.php tests` to run tests
- * _NOTE: a `phpunit.xml` config file is intentionally omitted in this example for a quick setup. This could be added to reduce the above command to `vendor/bin/phpunit`. Here is a [simple example](https://github.com/mikedfunk/programming-tests/blob/master/deep-array-search/phpunit.xml)._
+ * _NOTE: a `phpunit.xml` config file is intentionally omitted in this example
+   for a quick setup. This could be added to reduce the above command to
+   `vendor/bin/phpunit`. Here is a [simple
+   example](https://github.com/mikedfunk/programming-tests/blob/master/deep-array-search/phpunit.xml)._
 
 ## Adding phpunit to another project
 * `composer require --dev phpunit/phpunit`
@@ -14,7 +17,7 @@
   if it's prepended with `test` but you can also specify a test with the
   `@test` docblock. This makes it easier to write a test to look like a spec.
  * use `$this->assertEquals($expected, $actual);` or other asserts from the
-   [phpunit documentation](https://phpunit.de/manual/current/en/index.html) to
+   [phpunit documentation](https://phpunit.de/manual/current/en/appendixes.assertions.html) to
    test the expected result of calling a function.
  * you can set up mocks [via the phpunit
    api](https://phpunit.de/manual/current/en/test-doubles.html) or via the
@@ -22,6 +25,9 @@
  * you can use the `setUp()` and `tearDown()` methods as
    constructors/destructors for each test. This is useful for defining shared
    mocks and the instance of the class under test to use.
+ * [data
+   providers](https://phpunit.de/manual/current/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.data-providers)
+   are an excellent way to test multiple ways a test can fail or succeed.
 * `vendor/bin/phpunit --bootstrap vendor/autoload.php tests` to run. It should
   error out because the class has not been created yet. You now have a failing
   test.
