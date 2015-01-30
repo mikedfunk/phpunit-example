@@ -18,8 +18,8 @@ class Math
     /**
      * add two numbers together. Wow. Such complicated.
      *
-     * @param int $number1
-     * @param int $number2
+     * @param int $number1 the first number to add
+     * @param int $number2 the second number to add
      * @return int
      */
     public function add($number1, $number2)
